@@ -1,0 +1,1051 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+html{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+body {
+    margin: 0;
+}
+
+/* HEADER */
+
+.site-header {
+    background-color:#fff;
+    width:100%;
+    display:block;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.site-header .container { 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav li {
+    list-style:none;
+}
+
+.main-nav a {
+    color:#000;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size:0.875rem;  /* 14/16=0.875*/
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.04em;
+    padding:16px 12px;
+    margin:0px 10px;
+    display:inline-block;
+    cursor:pointer;  
+}
+
+.main-nav a:hover, .main-nav a:active {
+    border-bottom: 5px solid #e8bf5d;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.logo {
+    padding: 49px 0 44px;
+}
+
+/* HEADER PABAIGA*/
+
+/* HERO PRADŽIA*/
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(157,157,157,0), rgba(11,11,11,1)), url('../images/fonas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .container{
+    padding-top: 602px;
+    padding-bottom: 147px;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.hero-text {
+    color: #fff;
+    border-left: 2px solid #e8bf5d;
+    padding: 0 0 0 18px;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display', serif;
+    font-size: 4.75rem; 
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin:inherit;
+}
+
+.hero-text p{
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.8rem;  
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    margin:inherit;
+}
+
+.hero-nav a {
+    color:#000;
+    background-color: #e8bf5d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem; /*16 px*/
+    letter-spacing: 0.04em;
+    padding:20px 20px;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+}
+
+/* HERO PABAIGA*/
+
+/* SECTION APIE PRADŽIA*/
+
+.about{
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+}
+
+section > .container {
+    padding: 100px 0;
+}
+
+.about-intro, .practice-intro, .attorney-intro, .client-intro, .publications-intro, .faq-intro, .contact-intro {
+    max-width: 798px; /* gal nereikia?*/
+    padding-left: 18px;
+    border-left: 2px solid #e8bf5d;
+    margin: 0 0 70px;
+}
+
+.about-intro h2, .practice-intro h2, .attorney-intro h2, .client-intro h2, .publications-intro h2, .faq-intro h2, .contact-intro h2 {
+    font-size: 1.9375rem; /* 31/16=1.9375 rem */
+    font-weight:600;
+    letter-spacing: 0.04em;/* 40/1000=0.04em */
+    margin:0;
+    padding-bottom: 30px;
+}
+
+.about-intro p, .practice-intro p, .attorney-intro p, .client-intro p, .publications-intro p, .faq-intro p, .contact-intro p {
+    color: #666666;
+    font-size: 1.3125rem; /* 21/16=1.3125rem */
+    font-weight:300;
+    line-height:1.476;  /* 31/21=1.476*/
+    letter-spacing: 0.04em;/* 40/1000=0.04em */
+    margin:0;
+    text-align: justify; 
+}
+
+.about-history {
+    box-sizing: border-box;
+    justify-content: space-around;
+   
+}
+
+.event {
+    display:inline-flex;
+}
+
+.about-history h3{
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; /
+    font-weight: 600;
+    line-height:1.476; 
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.event p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.3125rem; 
+    line-height:1.476; 
+    font-weight: 600;
+    max-height: 68px;
+    padding: 0 47px 0 0;
+}
+
+.event span {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    line-height:1.3125; 
+    font-weight: 500;
+    padding: 17px;
+}
+
+.about-expertise {
+    max-width:50%; 
+}
+
+.about-expertise h3, .attorney-member h3 {
+    color:#000;
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; 
+    font-weight: 600;
+    line-height:1.476; 
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.about-expertise p {
+    padding-top: 36px;
+    color:#666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; 
+    font-weight: 500;
+    line-height:2.214; 
+    letter-spacing: 0.04em;
+    margin: 0;
+    text-align: justify; 
+}
+/* SECTION APIE PABAIGA*/
+/* SECTION EPD ORGANIZAVIMO NAUDA PRADŽIA*/
+
+.practice, .faq {
+    background-color: #111111;
+    color: #fff;
+}
+
+.practice-content{
+   margin-left: 111px;
+    text-align: justify;
+}
+
+.practice-top {
+    margin-bottom: 50px;
+}
+
+.practice-service, .practice-labour, .practice-cyber, .practice-real{
+    margin-right: 116px;
+}
+
+.practice-content i{
+    color: #e8bf5d;
+    font-size: 2rem; 
+    width: 2.625rem; 
+}
+
+.practice-content h3, .client-content h3 {
+    color:#fff;
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; /*21/16=1.3125*/
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin: 0 0 28px;
+}
+
+.practice-content p{
+    max-width: 459px;
+    color:#666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; 
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height:1.476; 
+    margin: 0;
+}
+
+/* SECTION EPD ORGANIZAVIMO NAUDA PABAIGA*/
+/* SECTION FAKTAI PRADŽIA*/
+
+.member{
+    text-align: left;
+    justify-content: space-around;
+    margin:0;
+}
+
+.attorney-member h3{
+    padding-top: 52px;
+    margin:0;
+    color:#111111;
+}
+
+.attorney-member span {
+    color:#666666;
+    font-family:'Open Sans', sans-serif;
+    font-size:0.875rem;
+    line-height:1.3125; 
+    font-weight: 500;
+}
+
+.attorney-member img {
+    max-width: 100%;
+}
+
+/* SECTION FAKTAI PABAIGA*/
+/* SECTION CLIENT PRADŽIA */
+
+.client {
+    background-image: url('../images/fonas2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 4, 0, 0.9);
+}
+
+.client h2{
+    color: #fff;
+}
+
+.client-content p, .client-content h5 {
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; 
+    font-weight: 500;
+    line-height:2.214; 
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+.client-content img{
+    box-shadow: 22px 22px #e8bf5d;
+    margin-right:57px;
+}
+
+.client-content p{
+    max-width: 600px;
+    padding:34px 0 42px;
+    text-align: justify;
+}
+
+.client-content h3, .client-content h5 {
+    margin:0;
+    text-align: left;
+}
+
+.client-comment span{
+    padding-right: 13px;
+    color: #535251;
+    font-size: 7.5rem;
+    align-self: flex-start;
+}
+
+.slideshow-container { /* Slideshow container */
+  position: relative;
+  height: 305px;
+}
+
+.mySlides {/* Slides */
+  display: none;
+  text-align: center;
+  height: 300px;
+}
+
+.dot-container {
+  object-position:bottom;
+  text-align:left;
+padding-top: 36px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 1px;;
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+}
+
+/* SECTION CLIENT PABAIGA */
+/* SECTION PUBLICATIONS PRADŽIA */
+
+.content1 {
+    max-width: 371px;
+    justify-content: space-between;
+    margin-right: 28px;
+    border-bottom: 3px solid #e8bf5d;
+}
+
+.content1 h3{
+    color: #000;
+    padding-top: 30px;
+    margin:0;
+    font-weight: 500;
+}
+
+.author p, .author h4 {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem;
+    font-weight: 400;
+    padding: 0;
+    margin:0;
+}
+
+.author p {
+    padding-right: 10px;
+}
+
+.data-bio p {
+    color:#666666;
+    font-style: italic;
+    margin:0;
+}
+
+.data-about p {
+    color: #666666;
+    padding: 38px 0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; 
+    font-weight: 500;
+    line-height:2.214; 
+    letter-spacing: 0.04em; 
+    text-align: justify;
+}
+
+.content-nav {
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+.content-nav a{
+    text-decoration: none;
+    color: #000;
+    font-family:'Open Sans', sans-serif;
+    font-size:0.875rem;  
+}
+
+.data-bio {
+    justify-content: space-between;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+/* SECTION PUBLICATIONS PABAIGA */
+
+#faq{
+    background-color: #000;
+    color: #fff;
+}
+.tablinks {
+  width: 60%;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: white;
+  padding: 30px 20px;
+  border: none;
+  border-bottom: 2px solid #e8bf5d;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  max-width: 50%;
+  font-family:'Open Sans', sans-serif;
+  margin-right: 34px;
+  cursor: pointer;
+}
+
+.tablinks:active, .tablinks:hover {
+  background-color: #000;
+  color: #e8bf5d;
+}
+
+.tablinks:after {
+  content: '\002B'; /* Pliusas*/
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.tablinks.active:after {  
+  content: "\2212"; /* Minusas*/
+}
+
+.tabcontent {
+  max-width: 40%;
+  position:absolute;
+  right: 50px;
+  top: 0;
+  margin-top: 150px;
+  text-align: center;
+  background-color: #e8bf5d;
+  color: #000;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  padding: 0px 48px;
+  border-radius: 5px;
+  line-height:2.214;
+  transition: max-height 0.2s ease-out;
+}
+.tabcontent:after{
+    display: contents;
+}
+
+.container {
+    position: relative;
+}
+
+.collapsible, .content{
+    display:none;
+}
+
+/* SECTION CONTACT PRADŽIA */
+
+#contact{
+    background-color: #fdfcfc;
+}
+
+#contact > .container{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.contact-form{
+    color: #fff;
+    width: 870px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    box-shadow: 0px 0px 21px 6px rgba(248,248,246,1);
+    margin-left: 150px;
+    
+}
+.contact-content{
+    max-width: 870px;
+}
+
+#contact .contact-content .contact-form .form {
+    flex-direction: column;
+}
+
+.form{
+    color: #c7c7c7;
+}
+
+.forma {
+    color: #fff;
+    width: 350px;
+    border:none;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 36px 0px 8px;
+    font-family:'Open Sans', sans-serif;
+    font-style: italic;
+    resize: none;
+}
+
+.btn-form{
+    background-color: #e8bf5d;
+    border: none;
+    border-radius: 50px;
+    margin: 32px 0px;
+    width: 170px;
+    padding: 17px 32px;
+    font-weight: 600;
+    text-align: center;
+    color: #000; 
+    text-decoration: none;
+	cursor: pointer;
+}
+
+
+.map img{
+    box-shadow:-22px 22px #e8bf5d;
+    margin: 0 0 0 68px;
+}
+
+/* SECTION CONTACT PABAIGA */
+
+/*PRE-FOOTER SECTION PRADŽIA*/
+.pre-footer > .container{
+    padding-bottom: 70px;
+    margin: 0;
+}
+.pre-footer-nav {
+  display: inline-block;
+  padding: 3px;
+    margin-bottom: 20px;
+  justify-content: center;
+  float: right;
+  text-align: end;
+  font-family: 'Open Sans', sans-serif;
+  font-size:0.875rem;
+text-transform: uppercase 
+}
+.pre-footer a{
+    background-color:cadetblue;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+.pre-footer a:hover{
+    color: #e8bf5d;
+}
+/*PRE-FOOTER SECTION PABAIGA*/
+/* FOOTER PRADŽIA*/
+
+.site-footer{
+    background-color: #000;
+    color: #fff;
+    display: block;
+}
+
+.site-footer .container{
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+    margin:0 auto;
+}
+.links li{
+    list-style: none;
+    display:inline-block;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.links a {
+    cursor: pointer;
+}
+
+/* FOOTER PABAIGA*/
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 1200px){
+    .hero .container{
+        margin-top: 70px;
+        padding: 50px 50px;
+        display: inline-block;
+        flex-direction: column;
+    }
+     .hero h1{
+       font-size: 3rem;  
+    }
+   
+    .hero p{
+        font-size:1.4rem;
+        margin-bottom: 40px
+    }
+    .hero-nav a{
+        font-size: 0.8rem;
+    }
+   
+    section > .container {
+    padding: 50px;
+    }
+	
+	.tab, .tabcontent {
+        display: none;    
+    }
+       
+    .collapsible {
+      display:inline-flex;
+      background-color: #000;
+      color: white;
+      padding: 10px 0 30px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #e8bf5d;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      max-width: 600px;
+      font-family:'Open Sans', sans-serif;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .collapsible:active, .collapsible:hover {
+      background-color: #000;
+      color: #e8bf5d;
+    }
+
+    .collapsible:after {
+      content: '\002B'; /* Pliusas*/
+      color: white;
+      font-weight: bold;
+      float: right;
+    }
+
+    .collapsible.active:after {  
+      content: "\2212"; /* Minusas*/
+    }
+    .content {
+      display: block;
+      max-width: 600px;
+      background-color: #e8bf5d;
+      color: #000;
+      font-family:'Open Sans', sans-serif;
+      font-weight: 500;
+      align-items: center;
+      padding: 0 10px;
+      border-radius: 5px;
+      line-height:1.5;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      position:right;
+      text-align: justify;
+    }
+    .content:after{
+        display: contents;
+    }    
+   
+    .pre-footer > .container{
+    margin:0;
+    padding: 0;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .main-nav {
+        display: none;
+    }
+   
+    .mobile-nav {
+        position: relative;
+        width:40%;
+        display: block;
+    }
+   
+    .mobile-nav li {
+        list-style: none;
+    }
+   
+    .mobile-nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 2px;
+        background-color: #e8bf5d;
+        font-size:0.875rem;  /* 14/16=0.875*/
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.04em;
+        border-radius: 5px;
+    }
+   
+    .mobile-nav a {
+        color: #3c4761;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 4px 17px;
+        display: block;
+    }
+   
+    .mobile-nav a:hover, mobile-nav a:active {
+        background-color: cadetblue;
+        border-radius: 5px;
+    }
+   
+    .mobile-nav a.icon {
+        font-size:1.5rem;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        color: #e8bf5d;
+    }
+   
+    .about-intro, .practice-intro, .attorney-intro, .client-intro, .publications-intro, .faq-intro, .contact-intro {
+    max-width: 700px; /* gal nereikia?*/
+    margin-bottom: 40px;
+    }
+   
+    .about-intro h2, .practice-intro h2, .attorney-intro h2, .client-intro h2, .publications-intro h2, .faq-intro h2, .contact-intro h2 {
+        font-size: 1.5rem;
+    }
+   
+    .about-intro p, .practice-intro p, .attorney-intro p, .client-intro p, .publications-intro p, .faq-intro p, .contact-intro p {
+    font-size: 1.2rem;
+    line-height:1.2;
+
+    }
+   
+    .practice-content{
+        margin-left:70px;
+    }
+
+    .practice-service, .practice-labour, .practice-cyber, .practice-real{
+    margin-right: 50px;
+    }
+   
+    .attorney-member img {
+    max-width: 90%;
+    }
+   
+    .attorney-member h3{
+    padding-top: 15px;
+    font-size: 1rem;
+    }
+   
+    .client-content p, .client-content h5 {
+    font-size:0.8rem;
+    }
+   
+    .client-content img{
+    max-width: 80%;
+    box-shadow: 15px 15px #e8bf5d;
+    margin-right:30px;
+    }
+   
+    .client-content p{
+    max-width: 400px;
+    padding:20px 0;
+    }
+   
+    .client-comment span{
+    padding: 10px 13px 0 0 ;
+    font-size: 5rem;
+    }
+   
+    .mySlides {
+    max-height:280px;
+    }
+   
+    .content1 {
+     margin: 0 30px
+    }
+
+    .content1 img{
+     max-width: 100%;
+    }
+   
+    .content1 h3{
+    padding: 10px 0;
+    }
+   
+    .author p, .author h4 {
+    font-size:0.7rem; /*14/16=0.875*/
+    }
+   
+    .author p {
+    padding-right: 5px;
+    }
+   
+    .data-about p {
+    padding: 20px 0;
+    font-size:0.7rem;
+    }
+   
+    .content-nav a{
+    font-size:0.7rem;
+    }
+   
+    .data-bio p {
+    font-size:0.7rem;
+    }
+   
+    .contact-form{
+    max-width: 600px;
+    margin-left: 60px;  
+    }
+   
+    .forma {
+    width: 300px;
+    }
+   
+    .btn-form{
+    margin: 15px 0px;
+    width: 170px;
+    padding: 10px 20px;
+    }
+   
+    .contact-form{
+    max-width: 100%;
+    margin-left: 0px;  
+    }
+   
+    .map img{
+    height: 250px;
+    width: 250px;
+    }
+   
+    .pre-footer > .container{
+    margin:0;
+    padding-bottom: 70px;
+    }
+   
+    .site-footer .container{
+    padding: 20px 50px;
+    }
+}
+   
+@media only screen and (max-width: 800px){
+     .client-content img{
+    width: 30%;
+    height: 60%;
+    }
+   
+    .client-content p{
+    padding-bottom: 10px;
+    }
+   
+    .client-comment span{
+    padding: 0 13px 0 0;
+    font-size: 5rem;
+    }
+   
+    .mySlides {
+    max-height:200px;
+    }
+   
+    .client > .container{
+    margin:0;
+    padding: 30px 50px 0;
+    }
+}
+
+
+ @media only screen and (max-width: 700px){
+     
+      .practice-content{
+        margin-left:0;
+    }
+    .practice-top, .practice-bottom{
+        display: block;
+        margin-bottom: 0;
+    }
+       
+    .practice-service, .practice-labour, .practice-cyber, .practice-real{
+    margin:0px;
+    padding:20px;
+    text-align: left;
+    }
+    .client-content img{
+    display: none;
+    }
+     .client-content p{
+    line-height:1.5;
+     }
+     
+     .member{
+    display: block;
+    max-width: 100%;
+    margin:0;
+    text-align: center;
+    }
+    .attorney-member img {
+    max-width: 100%;
+    }
+   
+    .attorney-member h3{
+    }
+   
+    .attorney-member{
+    margin-bottom:20px;
+    }
+     .map img{
+    display: none;
+    }
+     
+    .publications-content {
+        display: block;
+    }
+       
+    .content1 {
+     max-width: 100%;
+    margin:0;
+    }
+}
+
+
+    @media only screen and (max-width: 415px){
+    .hero .container{
+        margin-top: 70px;
+        padding: 10px 0 30px 30px;
+    }
+   
+    .hero h1{
+       font-size: 2rem;  
+    }
+   
+    .hero p{
+        font-size:1.4rem;
+        margin-bottom: 40px
+    }
+    .hero-nav a{
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+   
+    section > .container {
+    padding: 30px;
+    }
+   
+    .about-intro, .practice-intro, .attorney-intro, .client-intro, .publications-intro, .faq-intro, .contact-intro {
+    max-width: 400px;
+    margin-bottom: 40px;
+    }
+   
+    .about-intro h2, .practice-intro h2, .attorney-intro h2, .client-intro h2, .publications-intro h2, .faq-intro h2, .contact-intro h2 {
+    font-size: 1.3rem;
+    }
+   
+    .about-intro p, .practice-intro p, .attorney-intro p, .client-intro p, .publications-intro p, .faq-intro p, .contact-intro p {
+    font-size: 1rem;
+    line-height:1.2;
+    }
+    .about-content{
+        display: block;    
+    }
+   
+    .event p {
+    font-size:1rem;
+    }
+       
+    .event span {
+        font-size:0.875rem;
+        line-height:1.3125;
+        font-weight: 500;
+        text-align: justify;
+    }
+       
+    .about-expertise {
+        max-width:100%;
+    }
+   
+    .pre-footer > .container{
+    margin:0;
+    padding: 0 10px 50px;
+    }
+    .site-footer{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+        
+    .site-footer .container{
+    padding: 20px 0;
+    margin: 0 auto;
+    }
+
+@media only screen and (max-width: 370px){
+    .client{
+        display: none;
+    }
+}
